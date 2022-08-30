@@ -11,10 +11,19 @@ void display_board(char game_board[])
      
         // after the 3rd space the the board shifts down to print remaining spaces
         if((i+1)%3==0)
-        {
+        {   
             printf("\n");
         }
     }
+}
+
+void help(void)
+{
+    printf("\n\n\t\t\t------Instructions------\t\t\t");
+    printf("\n\n\n\t\t\tThis is the pattern of the board\t\t\t");
+    printf("\n\n\t\t\t1 2 3\n\t\t\t4 5 6\n\t\t\t7 8 9");
+    printf("\n\n\t\t\tPlayer has to put their sign in the empty block \n\t\t\tpositioned by the numbers as shown above!");
+    printf("\n\n\t\t\t------Enjoy your game------!!\n\n\n");
 }
 
 void insert(char game_board[], char *turnof)
@@ -168,6 +177,8 @@ int main(void)
     int play_count=0;
     //assigning playing variable ture variable so that the loop is always continued
     bool playing = true;
+
+    help();
 
     //the loop continues till one of thw player wins or the game is ended in draw
     while (playing)
