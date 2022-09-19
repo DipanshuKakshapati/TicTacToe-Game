@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdbool.h>
-#include <stdlib.h>
 
 void display_board(char game_board[])
 {
@@ -32,10 +31,18 @@ void insert(char game_board[], char *turnof)
 
     printf("your turn %c\n",*turnof);
     //asking user where they want to put their symbol on
-    printf("enter where you want to place your play: ");
-    scanf("%i", &position);
+
+    do
+    {
+        printf("enter where you want to place your play: ");
+        scanf("%i", &position);
+    }
+    while(game_board[position-1]!='_');
+
     //placing that players symbol in thier prefered space
-    game_board[position-1]=*turnof;
+
+        game_board[position-1]=*turnof;
+    
 }
 
 void switch_turn(char *turnof)
