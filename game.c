@@ -12,7 +12,7 @@ void resetBoard();
 void printBoard();
 int checkFreeSpaces();
 void playerMove();
-void computerMove();
+void computerMove();x
 char checkWinner();
 void printWinner(char);
 void compPlay();
