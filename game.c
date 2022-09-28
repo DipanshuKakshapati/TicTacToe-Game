@@ -410,6 +410,7 @@ int main(void)
     
     if(option==1)
     {
+        //1-Player mode
         printf("\t\t\n\nLet's begin your game with the Computer!");
         printf("\n\n\n\t\tKnow this before hand\n\n\n");
         printf("Horizontal is the ROW ----\n\n\n");
@@ -422,6 +423,7 @@ int main(void)
     }
     else
     {
+        //2-Player mode
         selfplay();
     }
     return 0;
