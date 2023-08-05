@@ -1,5 +1,5 @@
 # Instructions on how to play the tictactoe
-### After running the program there are two game modes you can choose from
+###### After running the program there are two game modes you can choose from
 ### The two modes in the game are: 
 ##### 1) Computer Play
 ##### 2) Dual Play
